@@ -21,9 +21,6 @@
 4. Настроить новый репозиторий. Указать в нём использование GitHub Action для публикации приложения, вместо публикации из ветки (gh-pages)
    ![alt text](./github-setup.png)
 5. В файле `REAME.md` в строке:
-```md
-![CI](https://github.com/Tryd0g0lik/env_netologe/actions/workflows/web.yml/badge.svg)
-```
-Заменить `<OWNER>` на ваш ник на github;
 
-Заменить `<REPOSITORY>` на название вашего репозитория;
+![CI](https://github.com/Tryd0g0lik/env_netologe/actions/workflows/web.yml/badge.svg)
+
