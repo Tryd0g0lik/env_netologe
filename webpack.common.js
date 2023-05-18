@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+
 module.exports = {
   target: 'web',
   output: {
@@ -41,6 +42,10 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: './src/index.html',
       filename: './index.html',
+      minify: {
+        // exclude the minification
+        collapseWhitespace: false
+      }
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
@@ -48,3 +53,4 @@ module.exports = {
     }),
   ],
 };
+
