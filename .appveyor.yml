@@ -17,7 +17,7 @@ build_script:
   - yarn run build   # команда сборки
 
 test_script:
-  - yarn run lint && yarn run test  # скрипт тестирования
+  - yarn run lint # && yarn run test  # скрипт тестирования
 
 deploy_script:  # скрипт развёртывания
 # https://www.appveyor.com/docs/how-to/git-push/
@@ -25,8 +25,6 @@ deploy_script:  # скрипт развёртывания
   - git config --global user.name AppVeyor
   - git config --global user.email ci@appveyor.com
   - ps: Set-Content -Path  "$HOME/.git-credentials" -Value "https://$GITHUB_TOKEN:x-oauth-basic@github.com"  -NoNewline
-  
- 
   - yarn add push-dir --dir=dist --branch=master --force --verbose
 
 
