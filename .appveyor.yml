@@ -20,8 +20,9 @@ test_script:
   - yarn run lint && yarn run test  # скрипт тестирования
 
 deploy_script:  # скрипт развёртывания
+# https://www.appveyor.com/docs/how-to/git-push/
   - git config --global credential.helper store
   - git config --global user.name AppVeyor
   - git config --global user.email ci@appveyor.com
-  - echo "https://$GITHUB_TOKEN:x-oauth-basic@github.com/Tryd0g0lik/env_netologe.git" > "$HOME/.git-credentials"
+  - echo "https://$GITHUB_TOKEN:x-oauth-basic@github.com" > "$HOME/.git-credentials"
   - npx push-dir --dir=dist --branch=gh-pages --force --verbose
