@@ -23,5 +23,3 @@
 5. В файле `REAME.md` в строке:
 
 [![Build status](https://ci.appveyor.com/api/projects/status/90h8b71jmbgjhtl6/branch/master?svg=true)](https://ci.appveyor.com/project/Tryd0g0lik/env-netologe/branch/master)
-
-
