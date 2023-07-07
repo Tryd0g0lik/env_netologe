@@ -8,6 +8,7 @@
   "scripts": {
     "start": "webpack --config ./webpack.dev.js",
     "build": "webpack --config ./webpack.prod.js",
+    "test": "jest",
     "lint": "eslint . --fix"
   },
   "devDependencies": {
